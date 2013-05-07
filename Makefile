@@ -21,3 +21,12 @@ relclean:
 	@rm -rf funnel_mini
 
 clobber: relclean clean
+
+get-deps:
+	@./rebar get-deps
+
+update-deps:
+	./rebar update-deps
+
+develop:
+	./funnel_mini/bin/funnel develop
