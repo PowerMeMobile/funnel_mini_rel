@@ -26,7 +26,10 @@ get-deps:
 	@./rebar get-deps
 
 update-deps:
-	./rebar update-deps
+	@./rebar update-deps
 
 develop:
-	./funnel_mini/bin/funnel develop
+	@./funnel_mini/bin/funnel develop
+
+tags:
+	@find . -name "*.[e,h]rl" -print | etags -
